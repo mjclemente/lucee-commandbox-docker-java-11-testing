@@ -1,6 +1,6 @@
 {
-  "debug": true,
-  "app": {
-    "cfengine": "lucee@5.3.2+77"
-  }
+    "debug":true,
+    "app":{
+        "cfengine":"lucee@5.3.2+77"
+    }
 }

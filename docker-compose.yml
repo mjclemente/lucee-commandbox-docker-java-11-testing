@@ -12,5 +12,6 @@ services:
     environment:
       PORT: 8080
       SSL_PORT: 8443
+      cfconfig_adminPassword: commandbox
       #javaVersion: openjdk9
       javaVersion: openjdk11
