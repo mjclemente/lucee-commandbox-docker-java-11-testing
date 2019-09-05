@@ -265,7 +265,7 @@ cfml_1  | Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+Use
 cfml_1  |
 ```
 
-And, the probable source - if you SSH into the container you'll see a `nohup.log` file is created in the app root with the following contents:
+And, the probable source - if you SSH into the container you'll see a `nohup.log` file is created in the `/root/serverHome` with the following contents:
 
 ```
 Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
