@@ -1,5 +1,7 @@
 # Testing openjdk11 with Lucee using the CommandBox Docker image
 
+**Update**: The awesome team at Ortus resolved this by adding Java 11 specific builds. The solution is to build from a image based on jdk11. So, the Dockerfile would be updated with: `FROM ortussolutions/commandbox:jdk11-alpine-2.7.0`, or one of the other jdk11 based builds.
+
 When testing the image, using `docker-compose up`, the server startup hangs, with the following logs:
 
 ```
