@@ -265,4 +265,11 @@ cfml_1  | Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+Use
 cfml_1  |
 ```
 
-And it just stops there... Any insight would be appreciated.
+And, the probable source - if you SSH into the container you'll see a `nohup.log` file is created in the app root with the following contents:
+
+```
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
+Unrecognized VM option 'UseCGroupMemoryLimitForHeap'
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+```
